@@ -1,1 +1,39 @@
-=head1 galaxy2steam
+=head1 NAME
+
+galaxy2steam - Automatically add and update GOG Galaxy installed games as Steam shortcuts
+
+=head2 WHAT?
+
+With the release of GOG Galaxy, GOG game installations are now easily tracked. This utility uses that information to generate and/or update a steam user's shortcut.vdf file. In simpler terms it makes GOG Galaxy games appear under a new "GOG Galaxy" category when using Steam. I created this utility would easily and semi-automatically appear in Big Picture mode on my HTPC.
+
+=head2 VERSION
+
+version 1.00
+
+=head2 SYNOPSIS
+
+Right now it takes zero options, will update/create the GOG Galaxy group for any/all Steam users on the local computer, and automatically attempt to grab and use grid banners for any GOG Galaxy-installed games that it can find matches for from the official Steam store. Re-run to update.
+
+galaxy2steam.exe
+
+    - There are no options.
+
+=head2 WILL IT DESTROY MY OTHER SHORTCUTS?
+
+Probably not, but as with anything, it's a good idea to take backups. This utility is designed to create and update a category called "GOG Galaxy", and it shouldn't touch any shortcuts manually created or created by other utilities -- unless it has that category or you're the lucky person to discover a shiny new bug.
+
+=head2 WHAT DO YOU MEAN UNLESS IT HAS THAT CATEGORY "GOG Galaxy"?
+
+When this utility runs, it also removes games that were since uninstalled. To do this, it first parses your shortcuts, removes any under the "GOG Galaxy" category, and finally generates the "GOG Galaxy" category from your current installs.
+
+=head2 BUGS
+
+Shit happens.
+
+=head2 SUPPORT
+
+Feel free to contact me via Github or by email at g.galaxy2steam -at- idiotb.us.
+
+=head2 COPYRIGHT AND LICENSE
+
+Copyright (C) 2015 Garret Noling
